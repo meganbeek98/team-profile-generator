@@ -14,10 +14,17 @@ const intern = require('./lib/intern.js');
 
 
 // questions, runs with Inquirer
-    // question, intern or engineer?
-        // path if intern selected
-        //path if engineer selected
-    //
+const questions = [
+    {
+        // question, intern or engineer?
+
+            // path if intern selected
+
+            //path if engineer selected
+
+        //
+    }
+]
 
         
 // function for creating employee, based on user's given answer to question
@@ -25,14 +32,21 @@ const intern = require('./lib/intern.js');
 
 
 // function to write HTML page
+function writeToHTML(response) {
+    const htmlFile = ``
+}
 
 
 
 // initialize the app (with a function)
+function init() {
+
+}
 
 
 
 // call for the initialized app
+init();
 
 
 
