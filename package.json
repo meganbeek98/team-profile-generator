@@ -1,0 +1,22 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "a generator for employee profiles",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meganbeek98/team-profile-generator.git"
+  },
+  "author": "meganbeek98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meganbeek98/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/meganbeek98/team-profile-generator#readme"
+}
