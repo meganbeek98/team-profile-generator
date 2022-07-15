@@ -58,10 +58,41 @@ const questions = [
     // path if engineer is selected:
     {
         type: "input",
-        message: "What is the engineer's name?",
+        message: "Enter the engineer's full name:",
         name: "engineerName",
         when: (response) => response.role == "engineer",
     },
+    {
+        type: "input",
+        message: "Enter the engineer's id:",
+        name: "engineerid",
+        when: (response) => response.role == "engineer",
+    },
+    {
+        type: "input",
+        message: "Enter the engineer's email address:",
+        name: "engineerEmail",
+        when: (response) => response.role == "engineer",
+        default: () => {},
+        validate: function (engineerEmail) {
+          valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(engineerEmail);
+  
+            if (!valid) {
+                console.log(".  Please enter a valid email");
+                return false;
+            } else {
+                return true;
+            }
+        },
+    },
+    {
+        type: "input",
+        message: "Enter the engineer's GitHub username:",
+        name: "github",
+        when: (response) => response.role == "engineer",
+    },
+
+
 
 
     // path if intern is selected:
