@@ -19,7 +19,7 @@ const intern = require("./lib/intern");
 let teamMems = [];
 
 
-//add Manager
+// add Manager
 
 function addManager() {
     inquirer.prompt ([
@@ -64,7 +64,7 @@ function addManager() {
 }
 
 
-//add Intern
+// add Intern
 
 function addIntern() {
     inquirer.prompt ([
@@ -108,7 +108,7 @@ function addIntern() {
 
 }
 
-//add engineer
+// add engineer
 
 function addEngineer() {
     inquirer.prompt ([

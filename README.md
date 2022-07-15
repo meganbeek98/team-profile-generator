@@ -2,7 +2,7 @@
 ### OSU Bootcamp Challenge 10
 ---------------------------------------------------
 ## Devloped By: Megan Beekman (2022), [GitHub profile --->](https://github.com/meganbeek98)
-    developed using: (fill in info here)
+    developed using: Node.js, Git, npm, Inquirer, Jest
 
 ---------------------------------------------------
 
@@ -33,19 +33,19 @@
 
 -----------------------------------------------------
 
-## Screenshots: <br>
+## Screencast and Screenshot(s): <br>
 
-<img>insert image path here</img>
+<iframe src="https://drive.google.com/file/d/1d1bCKcj9VSelM7Z9HAVeGEs4ox7ScaS-/preview" width="640" height="480"></iframe>
+<br>
 
-<img>insert image path here</img>
+Homepage
+<img src="./SS-homepage.png"></img>
 
 ---------------------------------------------------
 
 ## Links: <br>
 
 [GitHub Repository Link](https://github.com/meganbeek98/team-profile-generator.git)
-
-[insert link description](insert-actual-link-here)
 
 ----------------------------------------------------
 
@@ -56,6 +56,7 @@
     - MDN Web Docs
     - stackoverflow
     - w3schools.com
+    - Chrome Dev Tools
     - And last, but certainly not least --> Google!
 
 ----------------------------------------------------
