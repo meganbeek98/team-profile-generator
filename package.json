@@ -1,7 +1,7 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "--------------------------------------------------- ## Devloped By: Megan Beekman (2022), [GitHub profile --->](https://github.com/meganbeek98)     developed using: (fill in info here)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
