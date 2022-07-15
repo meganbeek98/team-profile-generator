@@ -1,5 +1,5 @@
 // required variables
-const inquirer = import('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
 
 // Connections to files
