@@ -30,7 +30,7 @@ const addManager = (manager) => {
     
 <div class="flex flex-col items-center pb-10">
     <div class="card-header">
-    <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="/images/intern.jpg" alt="image">
+    <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="./intern.png" alt="image">
         <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${manager.name}</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Manager 📆</span>
     </div>
@@ -79,7 +79,7 @@ const addEngineer = (engineer) => {
     
 <div class="flex flex-col items-center pb-10">
     <div class= "card-header">
-    <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="/images/intern.jpg" alt="image">
+    <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="./intern.png" alt="image">
         <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${engineer.name}</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Engineer 👩🏾‍💻</span>
     </div>
@@ -130,7 +130,7 @@ const addIntern = (intern) => {
     
 <div class="flex flex-col items-center pb-10">
     <div class= "card-header">
-    <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="/images/intern.jpg" alt="image">
+    <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="./intern.png" alt="image">
         <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${intern.name}</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Intern ​👨‍💻​🆔​👩‍💻​</span>
     </div>
