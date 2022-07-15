@@ -131,8 +131,31 @@ const questions = [
 
 ]
 
-        
+// Arrays for employee type
+let internArray = [];
+let engineerArray = [];
+
 // function for creating employee, based on user's given answer to question
+function internOrEngineer(response) {
+    if (response.role == "intern") {
+        const Intern = new intern(
+            response.internName,
+            response.internid,
+            response.internEmail,
+            response.school
+        );
+        // Employee entry is created at this point, now push the info to the appropriate Array
+    internArray.push(Intern);
+    } else if (response.role == "engineer") {
+        const Engineer = new engineer(
+            reponse.engineerName,
+            response.engineerid,
+            response.engineerEmail,
+            response.github,
+        );
+        engineerArray.push(Engineer);
+    }
+}
 
 
 
