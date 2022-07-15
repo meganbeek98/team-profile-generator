@@ -47,12 +47,30 @@ const questions = [
         name: "office",
     },
 
-    // prompt for question, engineer or intern?
+    // prompt for question, is the employee an engineer or an intern?
+    {
+        type: "list",
+        message: "Is the employee an engineer or an intern?",
+        name: "role",
+        choices: ["engineer", "intern"],
+    },
 
-        // path if engineer is selected:
-    
+    // path if engineer is selected:
+    {
+        type: "input",
+        message: "What is the engineer's name?",
+        name: "engineerName",
+        when: (response) => response.role == "engineer",
+    },
 
-        // path is intern is selected:
+
+    // path if intern is selected:
+    {
+        type: "input",
+        message: "What is the intern's name?",
+        name: "internName",
+        when: (response) => response.role == "intern",
+    },
 
 ]
 
