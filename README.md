@@ -33,6 +33,14 @@
 
 -----------------------------------------------------
 
+## Steps to run the applicatiohn: 
+    - run `npm install` in the terminal
+    - run `npm run test`
+    - run `node index`
+    - answer all of the prompts that pop up
+    - navigate to the index.html file
+    - see your generated employee profile(s)
+
 ## Screencast and Screenshot(s): <br>
 
 [Google Drive video link](https://drive.google.com/file/d/1d1bCKcj9VSelM7Z9HAVeGEs4ox7ScaS-/view)
