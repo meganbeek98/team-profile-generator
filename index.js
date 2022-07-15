@@ -198,7 +198,14 @@ function writeToHtml(response) {
 
 // initialize the app (with a function)
 function init() {
-
+    return inquirer.prompt(questions).then((response) => {
+      createNewEmployee(response);
+      if (!response.anotherEmployee) {
+        writeToHtml(response);
+      } else {
+        return init();
+      }
+    });
 }
 
 
