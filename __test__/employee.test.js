@@ -1,5 +1,5 @@
 const Employee = require('../lib/employee');
-const employeeData = "seth";
+const employeeData = "Shawn";
 
 test('creates a employee object' , () => {
 
@@ -21,7 +21,7 @@ test('get employee name', () => {
 //get ID using getID
 
 test('get employee ID', () => {
-    const idData = 555;
+    const idData = 007;
     const employee = new Employee(employeeData,idData); 
     expect(employee.id).toEqual(idData);
 });
@@ -29,8 +29,8 @@ test('get employee ID', () => {
 //get Email using getEmail
 
 test('get employee Email', () => {
-    const emailData = "seth@email.com";
-    const idData = 555;
+    const emailData = "shawnSmith@placeholder.net";
+    const idData = 007;
     const employee = new Employee(employeeData,idData,emailData); 
     expect(employee.email).toEqual(emailData);
 });
@@ -39,8 +39,8 @@ test('get employee Email', () => {
 //getrole ()
 
 test('getRole()', () => {
-    const emailData = "seth@email.com";
-    const idData = 555;
+    const emailData = "shawnSmith@placeholder.net";
+    const idData = 007;
     const employee = new Employee(employeeData,idData,emailData); 
     expect(employee.getRole()).toEqual(Employee);
 });

@@ -1,8 +1,8 @@
 const Manager = require("../lib/manager");
-const employeeData = "seth";
-const idData = 555;
-const emailData = "seth@email.com";
-const officeNumber = "222";
+const employeeData = "Shawn";
+const idData = 007;
+const emailData = "shawnSmith@placeholder.net";
+const officeNumber = "7007";
 
 test("get manager office number", () => {
 
@@ -10,13 +10,13 @@ test("get manager office number", () => {
     expect(employee.officeNumber).toEqual(this.office);
 });
 
-//generate office number with getOfficeNumber()
+//generate office number, w/ getOfficeNumber()
 test("getOfficeNumber()", () => {
     const employee = new Manager (employeeData,idData,emailData,officeNumber); 
     expect(employee.getOfficeNumber()).toEqual(this.office);
 });
 
-//getrole ()
+//getRole ()
 
 test("getRole()", () => {
   

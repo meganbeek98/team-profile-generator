@@ -1,7 +1,7 @@
 const intern = require("../lib/intern");
-const employeeData = "seth";
-const idData = 555;
-const emailData = "seth@email.com";
+const employeeData = "Shawn";
+const idData = 007;
+const emailData = "shawnSmith@placeholder.net";
 const schoolName = "UNLV";
 
 
