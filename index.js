@@ -16,14 +16,42 @@ const intern = require('./lib/intern.js');
 // questions, runs with Inquirer
 const questions = [
     {
-        // question, intern or engineer?
+        
+        name: "managerName",
+        type: "input",
+        message: "Enter Manager name:"
+    },
+    {
+        type: "input",
+        message: "Enter Manager id:",
+        name: "managerid",
+    },
+    {
+        type: "input",
+        message: "Enter Manager's email address: ",
+        name: "managerEmail",
+        default: () => {},
+        validate: function (managerEmail) {
+            valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(managerEmail);
+            if (!valid) {
+                console.log(".  Please enter a valid email");
+                return false;
+                } else {
+                return true;
+                }
+            },
+    },
+    {
+        type: "input",
+        message: "Enter Manager's office number:",
+        name: "office",
+    },
 
-            // path if intern selected
+    // path if engineer is selected:
+    
 
-            //path if engineer selected
+    // path is intern is selected:
 
-        //
-    }
 ]
 
         
