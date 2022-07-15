@@ -39,7 +39,7 @@ const questions = [
                 } else {
                 return true;
                 }
-            },
+        },
     },
     {
         type: "input",
@@ -47,10 +47,12 @@ const questions = [
         name: "office",
     },
 
-    // path if engineer is selected:
+    // prompt for question, engineer or intern?
+
+        // path if engineer is selected:
     
 
-    // path is intern is selected:
+        // path is intern is selected:
 
 ]
 
