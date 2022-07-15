@@ -1,8 +1,8 @@
 const Manager = require("../lib/manager");
 const employeeData = "Shawn";
-const idData = 007;
+const idData = 555;
 const emailData = "shawnSmith@placeholder.net";
-const officeNumber = "7007";
+const officeNumber = "7555";
 
 test("get manager office number", () => {
 

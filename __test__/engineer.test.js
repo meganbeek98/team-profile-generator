@@ -1,8 +1,8 @@
 const Engineer = require("../lib/engineer");
 const employeeData = "Shawn";
-const idData = 007;
+const idData = 555;
 const emailData = "shawnSmith@placeholder.net";
-const githubUser = "Shawn007";
+const githubUser = "Shawn555";
 
 test("get engineer github username", () => {
 

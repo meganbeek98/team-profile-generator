@@ -1,12 +1,12 @@
-//required node modules
+// Required node_modules
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// link page template
+// Link to template.js
 
 const templatePage = require("./src/template");
 
-//importing team members
+// Imports the team members
 
 const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");
@@ -15,7 +15,7 @@ const intern = require("./lib/intern");
 
 
 
-//create array for team members
+// Creates an array for the team members
 let teamMems = [];
 
 
@@ -26,26 +26,26 @@ function addManager() {
         {
             type: "input",
             name: "managerName",
-            message: "Who is the manager of your team? please enter name?"
+            message: "Enter Manger's name:"
         },
 
       
         {
             type: "input",
             name: "managerId",
-            message: "What is the Managers ID?"
+            message: "Enter Manger's id:"
         },
 
         
         {
             type: "input",
             name: "managerEmail",
-            message: "What is the Managers Email?"
+            message: "Enter Manager's email address:"
         },
         {
             type: "input",
             name: "managerOfficeNumber",
-            message: "What is the Managers office number?"
+            message: "Enter Manager's office number:"
         },
     ])
 
@@ -71,26 +71,26 @@ function addIntern() {
         {
             type: "input",
             name: "internName",
-            message: "What is the interns name?"
+            message: "Enter the intern's name:"
         },
 
       
         {
             type: "input",
             name: "internId",
-            message: "What is the interns ID?"
+            message: "Enter the intern's id:"
         },
 
         
         {
             type: "input",
             name: "internEmail",
-            message: "What is the interns Email?"
+            message: "Enter the intern's email address:"
         },
         {
             type: "input",
             name: "internSchoolName",
-            message: "What is the the name of the school your intern attends?"
+            message: "Enter the name of the school your intern is enrolled in:"
         },
     ])
 
@@ -115,26 +115,26 @@ function addEngineer() {
         {
             type: "input",
             name: "engineerName",
-            message: "Who is the engineer on your team? please enter name"
+            message: "Enter the engineer's name:"
         },
 
       
         {
             type: "input",
             name: "engineerId",
-            message: "What is the engineers ID?"
+            message: "Enter the engineer's id:"
         },
 
         
         {
             type: "input",
             name: "engineerEmail",
-            message: "What is the engineers Email?"
+            message: "Enter the engineer's email address:"
         },
         {
             type: "input",
             name: "engineerGithub",
-            message: "What is the engineers github information?"
+            message: "Enter the engineer's GitHub username:"
         },
     ])
 
@@ -157,8 +157,8 @@ function addTeamMem() {
     inquirer.prompt({
         type:"list",
         name:"addTeamMem",
-        message: "please choose the team memeber you would like to add",
-        choices: ["Engineer", "Intern", "I do not wish to add any team members at this time"]
+        message: "Choose the type of team memeber you would like to add:",
+        choices: ["Engineer", "Intern", "I do not want to add any team members right now"]
  })
  
  .then(answers => {
@@ -167,7 +167,7 @@ function addTeamMem() {
         addIntern();
     } else if (addTeamMem === "Engineer") {
         addEngineer();
-    } else if (addTeamMem === "I do not wish to add any team members at this time") {
+    } else if (addTeamMem === "I do not want to add any team members right now") {
         initPage();
     }
 })
@@ -179,7 +179,7 @@ fs.writeFile("./dist/index.html", templatePage(teamMems), err => {
     if (err) {
         return console.error(err);
     } else {
-        console.log("Congratulations your team profile has been created! Head over to your HTML to see the results!");
+        console.log("Congratulations! Your profile has been created! Check out the HTML file to see what was generated!");
         
     };
 });
