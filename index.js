@@ -92,14 +92,40 @@ const questions = [
         when: (response) => response.role == "engineer",
     },
 
-
-
-
     // path if intern is selected:
     {
         type: "input",
-        message: "What is the intern's name?",
+        message: "Enter the intern's full name:",
         name: "internName",
+        when: (response) => response.role == "intern",
+    },
+    {
+        type: "input",
+        message: "Enter the intern's id:",
+        name: "internid",
+        when: (response) => response.role == "intern",
+    },
+    {
+        type: "input",
+        message: "Enter the intern's email:",
+        name: "internEmail",
+        when: (response) => response.role == "intern",
+        default: () => {},
+        validate: function (internEmail) {
+          valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(internEmail);
+
+          if (!valid) {
+            console.log(".  Please enter a valid email");
+            return false;
+          } else {
+            return true;
+          }
+        },
+    },
+    {
+        type: "input",
+        message: "Enter the name of the school/program the intern is currently enrolled in:",
+        name: "school",
         when: (response) => response.role == "intern",
     },
 
