@@ -58,6 +58,8 @@ Homepage
 
 ## Links: <br>
 
+[Google Drive video link](https://drive.google.com/file/d/1d1bCKcj9VSelM7Z9HAVeGEs4ox7ScaS-/view)
+
 [GitHub Repository Link](https://github.com/meganbeek98/team-profile-generator.git)
 
 ----------------------------------------------------
