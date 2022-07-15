@@ -35,7 +35,12 @@
 
 ## Screencast and Screenshot(s): <br>
 
+[Google Drive video link](https://drive.google.com/file/d/1d1bCKcj9VSelM7Z9HAVeGEs4ox7ScaS-/view)
+
 <iframe src="https://drive.google.com/file/d/1d1bCKcj9VSelM7Z9HAVeGEs4ox7ScaS-/preview" width="640" height="480"></iframe>
+
+### *** Video may be too long to view on GitHub, please use the links provided above to view the demo ***
+
 <br>
 
 Homepage
