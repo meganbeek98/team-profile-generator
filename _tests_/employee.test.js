@@ -1,5 +1,5 @@
 // require employee.js
-const employee = require("../lib/employee");
+const Employee = require("../lib/employee");
 
 // Create Employee Object:
 describe('creates am employee object', () => {
