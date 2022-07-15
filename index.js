@@ -179,12 +179,10 @@ function createManagerCard(reponse) {
                         <li class="list-group-item">
                             ID: ${element.managerid}
                         </li
-
                         <li class="list-group-item">
                             Email:
                             <a href="mailto:${element.managerEmail}" target="_blank">${element.managerEmail}></a>
                         </li>
-
                         <li class="list-group-item">
                             Office Number: ${element.officeNumber}
                         </li>
