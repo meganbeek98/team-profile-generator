@@ -129,7 +129,13 @@ const questions = [
         when: (response) => response.role == "intern",
     },
 
-]
+    {
+        type: "confirm",
+        message: "Would you like to add employee?",
+        name: "addEmployee",
+    },
+
+];
 
 // Arrays for employee type
 let internArray = [];
