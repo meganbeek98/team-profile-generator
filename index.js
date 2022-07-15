@@ -157,6 +157,69 @@ function internOrEngineer(response) {
     }
 }
 
+function createEngineerCard(engineerArray) {
+        const engineerTemplateLits = engineerArray.map((Element) => {
+            return `
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">${element.engineerName}</h5>
+                            <p class="card-text">
+                            <i style="font-size:24px" class="fa">&#xf530;</i>
+                            Engineer
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        
+                            <li class="list-group-item">
+                                ID: ${element.engineerid}
+                            </li>
+                            <li class="list-group-item">
+                                Email: 
+                                <a href="mailto:${element.engineerEmail}" target="_blank" class="">${element.engineerEmail}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Github: 
+                                <a href="${github.com}" target = "_blank">${element.githubUsername}</a>
+                            </li>
+                            
+                        </ul>
+                    </div>`;
+        })
+        .join("");
+    return engineerTemplateLits;
+}
+
+function createInternCard(internArray) {
+    const internTemplateLits = internArray
+      .map((element) => {
+        return `
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">${element.internName}</h5>
+                        <p class="card-text">
+                        <i style="font-size:24px" class="fa">&#xf19d;</i>
+                        Intern
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            ID: ${element.internid}
+                        </li>
+                        <li class="list-group-item">
+                            Email: 
+                            <a href="mailto:${element.internEmail}" target="_blank">${element.internEmail}</a>
+                        </li>
+                        <li class="list-group-item">
+                            School: ${element.school}
+                        </li>
+                    </ul>
+                </div>`;
+      })
+      .join("");
+
+    return internTemplateLits;
+}
+
 // function to write HTML page
 function writeToHtml(response) {
     const htmlFile = `
