@@ -163,8 +163,41 @@ function internOrEngineer(response) {
     }
 }
 
+function createManagerCard(reponse) {
+    const managerTemplateLits = response
+        .map((element)=> {
+            return `
+                <div class="card" style= "width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title>${element.managerName}</h5>
+                        <p class ="card-text">
+                            <i style="font-size:24px" class="fa">&#xf0f4;</i>
+                        Manager
+                        <p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            ID: ${element.managerid}
+                        </li
+
+                        <li class="list-group-item">
+                            Email:
+                            <a href="mailto:${element.managerEmail}" target="_blank">${element.managerEmail}></a>
+                        </li>
+
+                        <li class="list-group-item">
+                            Office Number: ${element.officeNumber}
+                        </li>
+                    </ul>
+                </div>`;
+        })
+        .join("");
+    return managerTemplateLits;
+}
+
 function createEngineerCard(engineerArray) {
-        const engineerTemplateLits = engineerArray.map((Element) => {
+        const engineerTemplateLits = engineerArray
+          .map((element) => {
             return `
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
