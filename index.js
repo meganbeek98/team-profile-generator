@@ -1,6 +1,34 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// prompts for input of manager information
+
+
+// questions, runs with Inquirer
+    // question, intern or engineer?
+        // path if intern selected
+        //path if engineer selected
+    //
+
+        
+// function for creating employee, based on user's given answer to question
+
+
+
+// function to write HTML page
+
+
+
+// initialize the app (with a function)
+
+
+
+// call for the initialized app
+
+
+
+
+
 // WHEN I am prompted for my team members and their information
 // THEN an HTML file is generated that displays a nicely formatted team roster based on user input
 
